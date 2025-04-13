@@ -6,9 +6,9 @@ st.title("OKY's Alopecia Areata Risk Hesaplayıcı")
 # Kullanıcıdan veri al
 calreticulin = st.text_input("Calreticulin düzeyi (ng/mL) (0-6000)", value="")
 aso10 = st.text_input("ASO-10 skoru (0-40)", value="")
-ai_hastalik_yok = st.selectbox("AI hastalık YOK?", ["Var", "Yok"]) == "Yok"
+ai_hastalik_yok = st.selectbox("Otoimmün hastalık", ["Var", "Yok"]) == "Yok"
 cinsiyet_kadin = st.selectbox("Cinsiyet", ["Erkek", "Kadın"]) == "Kadın"
-antitpo_yuksek = st.selectbox("Anti-TPO yüksek?", ["Hayır", "Evet"]) == "Evet"
+antitpo_yuksek = st.selectbox("Anti-TPO antikor", ["Hayır", "Evet"]) == "Evet"
 
 # Hesapla butonu
 if st.button("Riski Hesapla"):
