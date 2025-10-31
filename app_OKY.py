@@ -4,10 +4,10 @@ import math
 st.title("OKY's Alopecia Areata Risk Hesaplayıcı")
 
 # --- Kullanıcıdan veri al ---
-calreticulin = st.number_input("Calreticulin düzeyi 0-10 Arası (µg/mL)", min_value=0.0, max_value=6.0, step=0.1, format="%.2f")
+calreticulin = st.number_input("Calreticulin düzeyi (µg/mL) – 0–6 arası", min_value=0.0, max_value=6.0, step=0.1, format="%.2f")
 aso10 = st.number_input("ASÖ-10 skoru", min_value=0.0, max_value=40.0, step=1.0, format="%.0f")
-ai_hastalik_yok = st.selectbox("Otoimmün hastalık", ["Var", "Yok"]) == "Yok"
 cinsiyet_kadin = st.selectbox("Cinsiyet", ["Erkek", "Kadın"]) == "Kadın"
+ai_hastalik_yok = st.selectbox("Otoimmün hastalık", ["Var", "Yok"]) == "Yok"
 antitpo_yuksek = st.selectbox("Anti-TPO antikor", ["Normal", "Yüksek"]) == "Yüksek"
 
 # --- Hesapla butonu ---
